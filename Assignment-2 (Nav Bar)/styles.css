@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body header {
+  height: 8%;
+  width: 100%;
+  background-color: #cecece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body header ul li {
+  list-style: none;
+  margin: 0.5rem 2rem 0 0;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body header ul a {
+  text-decoration: none;
+}
+
+body header ul a:hover, body header ul a:active {
+  color: red;
+  outline: 0.01rem solid black;
+  padding: 0 0.7rem;
+}
+
+body header ul a:focus {
+  color: #e66700;
+}
