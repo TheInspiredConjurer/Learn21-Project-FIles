@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(https://wallup.net/wp-content/uploads/2016/01/258626-nature-landscape-lake-reflection-mountain-clouds-forest-Italy-water-summer-trees-calm.jpg);
+}
+
+body p {
+  color: #f700ff;
+}
+
+body p[class="one"] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+body p[class="two"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+body p[class="three"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body p[class="four"] {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+body p[class="five"] {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
