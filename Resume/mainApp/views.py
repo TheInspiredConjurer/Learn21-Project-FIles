@@ -6,4 +6,4 @@ def index(request):
     return render(request, 'index.html')
 
 def portfoliodetails(request):
-    return render(request, "portfolio-details.html")
+    return render(request, 'portfolio-details.html')
