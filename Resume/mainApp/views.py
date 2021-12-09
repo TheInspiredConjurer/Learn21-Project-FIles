@@ -1,5 +1,4 @@
-from django.shortcuts import render
-from .forms import ContactForm
+from django.shortcuts import render, HttpResponseRedirect
 
 # Create your views here.
 

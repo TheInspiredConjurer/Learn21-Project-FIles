@@ -25,3 +25,7 @@ class SkillLevel(models.Model):
     JSSkillLevel = models.IntegerField(max_length=100)
     PythonSkillLevel = models.IntegerField(max_length=100)
     PhotoshopSkillLevel = models.IntegerField(max_length=100)
+
+
+def __str__(self):
+    return self.title
