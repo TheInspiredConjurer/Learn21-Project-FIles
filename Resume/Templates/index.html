@@ -658,7 +658,7 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
 
-              <form method="post" role="form" class="django-email-form">
+              <form action="{% url 'index' %}" method="post" role="form" class="django-email-form">
                 {% csrf_token %}
                 <div class="row">
                   <div class="col-md-6 form-group">
