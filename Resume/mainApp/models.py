@@ -7,6 +7,8 @@ class BasicInfo(models.Model):
     email = models.EmailField()
     github_link = models.URLField(null=True, blank=True)
     linkedin_Link = models.URLField(null=True, blank=True)
+    def __str__(self):
+        return self.pk
 
 class AboutSection(models.Model):
     name = models.ForeignKey('BasicInfo', on_delete=models.CASCADE)
@@ -17,6 +19,8 @@ class AboutSection(models.Model):
     city = models.CharField(max_length=200, blank=True)
     age = models.IntegerField(max_length=100)
     degree = models.CharField(max_length=200)
+    def __str__(self):
+        return self.pk
 
 class SkillLevel(models.Model):
     name = models.ForeignKey('BasicInfo', on_delete=models.CASCADE)
@@ -25,14 +29,16 @@ class SkillLevel(models.Model):
     JSSkillLevel = models.IntegerField(max_length=100)
     PythonSkillLevel = models.IntegerField(max_length=100)
     PhotoshopSkillLevel = models.IntegerField(max_length=100)
+    def __str__(self):
+        return self.pk
 
 class ContactUs(models.Model):
     name = models.CharField(max_length=200, blank=False)
     email = models.EmailField()
     subject = models.CharField(max_length=200, blank=False)
     message = models.TextField()
+    def __str__(self):
+        return '%d - %s' % (self.pk, self.name) 
 
 
 
-def __str__(self):
-    return self.title
