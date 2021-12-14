@@ -26,6 +26,12 @@ class SkillLevel(models.Model):
     PythonSkillLevel = models.IntegerField(max_length=100)
     PhotoshopSkillLevel = models.IntegerField(max_length=100)
 
+class ContactUs(models.Model):
+    name = models.CharField(max_length=200, blank=False)
+    email = models.EmailField()
+    subject = models.CharField(max_length=200, blank=False)
+    message = models.TextField()
+
 
 
 def __str__(self):
